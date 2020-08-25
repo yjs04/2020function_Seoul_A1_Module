@@ -686,7 +686,7 @@ nav > ul > li >a:hover{color: #aaa;}
 #notice_button{
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    padding: 20px;
+    padding: 10px 20px;
     border-top: 2px solid #FFA156;
     font-weight: bold;
     color: #FFA156;
@@ -709,6 +709,53 @@ nav > ul > li >a:hover{color: #aaa;}
 }
 
 #notice_button:hover > i{color: #fff;}
+
+/* gallery */
+#gallery > .content_title > h2{border-color: #FFEF4B;}
+#gallery_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin: 10px 0;
+    margin-top: 40px;
+}
+
+.gallery_img_wrap{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    min-width: 300px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px #ddd;
+}
+
+.gallery_title{
+    padding: 15px;
+    height: 60px;
+    overflow: hidden;
+    /* height: 100px; */
+    background-color: #555;
+    transition: 0.3s;
+}
+
+.gallery_img_wrap:hover > .gallery_title{height: 100px;}
+
+.gallery_title > *{color: #fff;}
+
+.gallery_img_wrap > img{width: 100%;}
+
+#gallery_button{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    height: 60px;
+    padding: 10px 20px;
+    border: none;
+    border-top: 2px solid #FFDF50;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+}
 
 /* footer */
 footer{
